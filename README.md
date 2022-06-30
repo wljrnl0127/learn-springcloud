@@ -1,2 +1,2 @@
 # learn-springcloud
-学习springcloud时创建的项目
+学习springcloud创建的项目
