@@ -17,7 +17,8 @@ public class DeptComsumerController {
      * <p>
      * Ribbon:我们这里的地址，应该是一个变量，通过服务名来访问
      */
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+    private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
 
     /**
      * 理解：消费者，不应该有service层~
