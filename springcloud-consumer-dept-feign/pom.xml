@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>springcloud-consumer-dept-80</artifactId>
+    <artifactId>springcloud-consumer-dept-feign</artifactId>
 
     <properties>
         <maven.compiler.source>8</maven.compiler.source>
@@ -18,6 +18,13 @@
 
     <!--实体类 + web-->
     <dependencies>
+        <!--Feign-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+            <version>1.4.7.RELEASE</version>
+        </dependency>
+
         <!--实体类-->
         <!--我们需要拿到实体类，所以要配置api module-->
         <dependency>
