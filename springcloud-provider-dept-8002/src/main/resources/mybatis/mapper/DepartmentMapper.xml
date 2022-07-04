@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cfz.mapper.DepartmentMapper">
+
+    <select id="getDeptList" resultType="com.cfz.pojo.Department">
+        select *
+        from department
+    </select>
+
+    <select id="getDeptById" resultType="com.cfz.pojo.Department">
+        select *
+        from department
+        where deptId = #{deptId}
+    </select>
+
+    <insert id="addDept">
+        insert into department(deptName, dbSource)
+        values (#{deptName}, DATABASE())
+    </insert>
+
+    <update id="updateDept">
+        update department
+        set deptName = #{deptName},
+            dbSource = DATABASE()
+        where deptId = #{deptId}
+    </update>
+
+    <delete id="deleteDept">
+        delete
+        from department
+        where deptId = #{deptId}
+    </delete>
+
+</mapper>
